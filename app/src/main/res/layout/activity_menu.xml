@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#368D90"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MENÜ"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnEmailGonder"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_weight="1"
+            android:background="#0BE347"
+            android:text="E-Mail Gönder"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:id="@+id/btnKullaniciAyarlari"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_weight="1"
+            android:background="#E91E63"
+            android:text="Kullanıcı Ayarları" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnIsıkSensoru"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_weight="1"
+            android:background="#9C27B0"
+            android:text="Işık Sensörü" />
+
+        <Button
+            android:id="@+id/btnİvmeOlcer"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_weight="1"
+            android:background="#FFC107"
+            android:text="İvme Ölçer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnKullaniciListele"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:text="Kullanıcı Listele" />
+
+        <Button
+            android:id="@+id/btnBilgi"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_weight="1"
+            android:background="#009688"
+            android:text="Bilgi" />
+    </LinearLayout>
+</LinearLayout>
