@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="MENÜ"
+            android:text="Hosgeldiniz"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
@@ -62,12 +62,12 @@
             android:text="Işık Sensörü" />
 
         <Button
-            android:id="@+id/btnİvmeOlcer"
+            android:id="@+id/btnKullaniciListele"
             android:layout_width="match_parent"
             android:layout_height="181dp"
             android:layout_weight="1"
-            android:background="#FFC107"
-            android:text="İvme Ölçer" />
+            android:background="#2196F3"
+            android:text="Kullanıcı Listele" />
 
     </LinearLayout>
 
@@ -77,12 +77,13 @@
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/btnKullaniciListele"
+            android:id="@+id/btnİvmeOlcer"
             android:layout_width="match_parent"
             android:layout_height="181dp"
             android:layout_weight="1"
-            android:background="#2196F3"
-            android:text="Kullanıcı Listele" />
+            android:background="#FFC107"
+            android:enabled="false"
+            android:text="İvme Ölçer" />
 
         <Button
             android:id="@+id/btnBilgi"

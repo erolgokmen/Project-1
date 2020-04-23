@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class KullaniciAyarlariActivity extends AppCompatActivity {
 
@@ -42,8 +43,7 @@ public class KullaniciAyarlariActivity extends AppCompatActivity {
         tvcinsiyet=findViewById(R.id.tvcinsiyet);
         tvboy=findViewById(R.id.tvboy);
         tvkilo=findViewById(R.id.tvkilo);
-        tvKaranlik=findViewById(R.id.tvKaranlikMod);
-        swKaranlik=findViewById(R.id.swDark);
+
 
 
 
@@ -52,10 +52,10 @@ public class KullaniciAyarlariActivity extends AppCompatActivity {
 
 
        String kayitlikullanici=sharedPreferences.getString("keyKullanici","-");
-       tvkullanici.setText(("Kullanıcı Adı"+kayitlikullanici));
+       tvkullanici.setText(("Kullanıcı Ad:"+kayitlikullanici));
 
         int kayitliyas=sharedPreferences.getInt("keyYasi",0);
-       tvyas.setText("Yaşı"+kayitliyas);
+       tvyas.setText("Yaş:"+kayitliyas);
 
         String kayitlicinsiyet=sharedPreferences.getString("keyCinsiyet","-");
         tvcinsiyet.setText(("Cinsiyet:"+kayitlicinsiyet));
@@ -100,6 +100,7 @@ public class KullaniciAyarlariActivity extends AppCompatActivity {
         sharedPreferences.edit().putInt("keyKilo",kilo).apply();
         sharedPreferences.edit().putInt("keyBoy",boy).apply();
 
+        Toast.makeText(KullaniciAyarlariActivity.this,"Sharedreferansla kaydedildi.",Toast.LENGTH_LONG).show();
 
     }
 

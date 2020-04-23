@@ -2,4 +2,19 @@
     <string name="app_name">Project</string>
     <string name="kullaniciAd">Kullanıcı Ad: </string>
     <string name="sifre">Şifre:</string>
+
+    <string-array name="Kullanici_Listesi">
+        <item>admin</item>
+        <item>erol</item>
+        <item>mustafa</item>
+        <item>yusuf</item>
+    </string-array>
+
+    <string-array name="Sifre">
+        <item>123</item>
+        <item>abc</item>
+        <item>456</item>
+        <item>789</item>
+    </string-array>
+
 </resources>
